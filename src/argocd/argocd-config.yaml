@@ -6,6 +6,10 @@ metadata:
 spec:
   project: default
   source:
+    helm:
+      valueFiles:
+        - apps-config.yaml
+        - target-apps.yaml
     repoURL: https://github.com/StefanKleinhans/application-manifests.git
     targetRevision: HEAD
     path: src/argocd
