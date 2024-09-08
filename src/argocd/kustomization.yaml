@@ -1,3 +1,4 @@
 resources:
   - projects/.
   - argocd-config.yaml
+  - namespaces.yaml
