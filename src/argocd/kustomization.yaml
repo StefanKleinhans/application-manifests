@@ -1,4 +1,3 @@
 resources:
   - projects/.
   - argocd-config.yaml
-  - apps/.
