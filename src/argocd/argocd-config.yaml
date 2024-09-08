@@ -6,10 +6,6 @@ metadata:
 spec:
   project: default
   source:
-    helm:
-      valueFiles:
-        - Chart.yaml
-        - values.yaml
     repoURL: https://github.com/StefanKleinhans/application-manifests.git
     targetRevision: HEAD
     path: src/argocd
