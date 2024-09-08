@@ -10,7 +10,7 @@ spec:
   description: Monitoring Project
   # Allow manifests to deploy from any Git repos
   sourceRepos:
-  - '../apps/*'
+  - '*'
   # Only permit applications to deploy to the guestbook namespace in the same cluster
   destinations:
   - namespace: opentelemetry
