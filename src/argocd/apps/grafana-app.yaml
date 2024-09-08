@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root
-  namespace: argocd
+  name: grafana
+  namespace: grafana
 spec:
-  project: default
+  project: monitoring
   source:
     repoURL: https://github.com/StefanKleinhans/application-manifests.git
     targetRevision: HEAD
-    path: apps/argocd
+    path: src/argocd/
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
