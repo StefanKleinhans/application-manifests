@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/StefanKleinhans/application-manifests.git
     targetRevision: HEAD
-    path: src/argocd
+    path: src/grafana
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
@@ -16,3 +16,5 @@ spec:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
